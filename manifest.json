@@ -1,0 +1,32 @@
+{
+    "author": "Sebastian Blask",
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "description": "Open Tabs In Foreground",
+    "homepage_url": "https://github.com/sblask/webextension-open-tabs-in-foreground",
+    "icons": {
+        "48": "icon.png"
+    },
+    "manifest_version": 2,
+    "name": "Open Tabs In Foreground",
+    "permissions": [
+        "<all_urls>"
+    ],
+    "version": "1.0.0"
+}
