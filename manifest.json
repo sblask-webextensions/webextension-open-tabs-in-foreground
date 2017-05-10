@@ -15,7 +15,7 @@
                 "http://*/*",
                 "https://*/*"
             ],
-            "run_at": "document_end"
+            "run_at": "document_start"
         }
     ],
     "description": "Open Tabs In Foreground",

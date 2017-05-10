@@ -1,14 +1,16 @@
-document.addEventListener("click", (event) => {
+document.addEventListener("click", handleCtrlLeftClick, true);
+document.addEventListener("auxclick", handleMiddleClick, true);
+
+function handleCtrlLeftClick(event){
     if (event.button === 0 && event.ctrlKey) {
         handleOpenInTabClick(event);
     }
-});
-
-document.addEventListener("auxclick", (event) => {
+}
+function handleMiddleClick(event){
     if (event.button === 1) {
         handleOpenInTabClick(event);
     }
-});
+}
 
 function handleOpenInTabClick(event) {
     let anchor = getAnchor(event.target);
@@ -16,6 +18,8 @@ function handleOpenInTabClick(event) {
         return;
     }
 
+    event.stopImmediatePropagation();
+    event.stopPropagation();
     event.preventDefault();
 
     chrome.runtime.sendMessage(
