@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sblask/webextension-open-tabs-in-foreground.svg?branch=master)](https://travis-ci.org/sblask/webextension-open-tabs-in-foreground)
+
 # webextension-open-tabs-in-foreground
 Clicking a link using the left mouse button while having Ctrl pressed opens it
 in a background tab by default. The same when using the middle mouse button.
