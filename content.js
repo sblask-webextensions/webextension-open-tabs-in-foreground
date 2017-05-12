@@ -1,12 +1,13 @@
 document.addEventListener("click", handleCtrlLeftClick, true);
 document.addEventListener("auxclick", handleMiddleClick, true);
 
-function handleCtrlLeftClick(event){
+function handleCtrlLeftClick(event) {
     if (event.button === 0 && event.ctrlKey) {
         handleOpenInTabClick(event);
     }
 }
-function handleMiddleClick(event){
+
+function handleMiddleClick(event) {
     if (event.button === 1) {
         handleOpenInTabClick(event);
     }
