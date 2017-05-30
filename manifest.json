@@ -21,12 +21,12 @@
     "description": "Open Tabs In Foreground",
     "homepage_url": "https://github.com/sblask/webextension-open-tabs-in-foreground",
     "icons": {
-        "48": "icon.png"
+        "48": "icon.svg"
     },
     "manifest_version": 2,
     "name": "Open Tabs In Foreground",
     "permissions": [
         "<all_urls>"
     ],
-    "version": "1.0.0"
+    "version": "1.0.1"
 }

@@ -12,7 +12,7 @@
         "url": "https://github.com/sblask/webextension-open-tabs-in-foreground"
     },
     "scripts": {
-        "build": "web-ext build --artifacts-dir . --ignore-files screenshots --ignore-files package.json",
+        "build": "web-ext build --artifacts-dir . --ignore-files *.fodg --ignore-files package.json --ignore-files screenshots",
         "help": "web-ext --help",
         "lint": "eslint background.js content.js && jscs background.js content.js",
         "start": "GTK_THEME=Greybird web-ext run --verbose --firefox firefox-trunk",
@@ -20,5 +20,5 @@
         "test": "web-ext lint"
     },
     "title": "Open Tabs In Foreground",
-    "version": "1.0.0"
+    "version": "1.0.1"
 }
