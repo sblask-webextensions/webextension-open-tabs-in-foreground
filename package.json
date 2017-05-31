@@ -12,7 +12,7 @@
         "url": "https://github.com/sblask/webextension-open-tabs-in-foreground"
     },
     "scripts": {
-        "build": "web-ext build --artifacts-dir . --ignore-files screenshots --ignore-files package.json --ignore-files icon.fodg --ignore-files *.png",
+        "build": "web-ext build --artifacts-dir . --ignore-files screenshots --ignore-files package.json --ignore-files icon.fodg",
         "help": "web-ext --help",
         "lint": "eslint --debug *.js && jscs *.js",
         "start": "GTK_THEME=Greybird web-ext run --verbose --firefox firefox-trunk",
