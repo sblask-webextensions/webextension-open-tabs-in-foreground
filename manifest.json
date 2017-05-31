@@ -12,6 +12,7 @@
                 "content.js"
             ],
             "matches": [
+                "file://*/*",
                 "http://*/*",
                 "https://*/*"
             ],
@@ -32,5 +33,5 @@
     "permissions": [
         "<all_urls>"
     ],
-    "version": "1.0.2"
+    "version": "1.0.3"
 }

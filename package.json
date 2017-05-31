@@ -20,5 +20,5 @@
         "test": "web-ext lint"
     },
     "title": "Open Tabs In Foreground",
-    "version": "1.0.2"
+    "version": "1.0.3"
 }
