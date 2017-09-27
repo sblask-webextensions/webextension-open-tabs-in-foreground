@@ -16,6 +16,6 @@ Feedback
 --------
 
 You can report bugs or make feature requests on
-[Github](https://github.com/sblask/webextension-open-tabs-in-foreground).
+[Github](https://github.com/sblask/webextension-open-tabs-in-foreground)
 
 Patches are welcome.
