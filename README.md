@@ -12,6 +12,11 @@ You won't need this extension in Firefox as it has a setting for this called
 `When you open a link in a new tab, switch to it immediately`, but in Chrome
 there is no way to achieve this otherwise.
 
+Privacy Policy
+--------------
+
+This extension does not collect or send data of any kind to third parties.
+
 Feedback
 --------
 
