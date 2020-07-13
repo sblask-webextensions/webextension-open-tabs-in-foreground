@@ -14,7 +14,7 @@ function handleMiddleClick(event) {
 }
 
 function handleOpenInTabClick(event) {
-    let anchor = getAnchor(event.target);
+    const anchor = getAnchor(event.target);
     if (!anchor || !anchor.href) {
         return;
     }
