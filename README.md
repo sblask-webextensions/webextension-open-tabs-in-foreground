@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/sblask/webextension-open-tabs-in-foreground.svg?branch=master)](https://travis-ci.org/sblask/webextension-open-tabs-in-foreground)
+[![Build Status](https://github.com/sblask/webextension-open-tabs-in-foreground/actions/workflows/build.yml/badge.svg)](https://github.com/sblask/webextension-open-tabs-in-foreground/actions/workflows/build.yml)
 
 Open Tabs In Foreground
 =======================
