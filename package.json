@@ -1,8 +1,10 @@
 {
     "author": "Sebastian Blask",
     "devDependencies": {
-        "eslint": "8.9.x",
-        "web-ext": "6.7.x"
+        "@eslint/js": "^8.54.0",
+        "@stylistic/eslint-plugin-js": "^1.4.0",
+        "eslint": "^8.54.0",
+        "web-ext": "^7.8.0"
     },
     "license": "MIT",
     "name": "opentabsinforeground",
@@ -19,16 +21,15 @@
         "help": "web-ext --help",
         "icons": "for size in 16x16 32x32 48x48 64x64 128x128 440x280; do convert -background none -density 1000 -resize ${size} -extent ${size} -gravity center icon.svg icon-${size}.png; done",
         "lint": "eslint --debug $(find . -not -path '*node_modules*' -name '*.js')",
-        "modify:chrome": "jq --indent 4 '. | del(.applications)' manifest.json | sponge manifest.json",
+        "modify:chrome": "jq --indent 4 '. | del(.applications) | del(.browser_action.default_icon)' manifest.json | sponge manifest.json",
         "modify:firefox": "npm run modify:manifest:firefox && npm run modify:remove-polyfill-references",
         "modify:manifest:firefox": "jq --indent 4 '. | .background.scripts |= map(select(. != \"browser-polyfill.js\")) | if has(\"icons\") then .icons |= {\"48\": \"icon.svg\"} else . end | del(.options_ui.open_in_tab)' manifest.json | sponge manifest.json",
         "modify:remove-polyfill-references": "sed --in-place --regexp-extended '/\"(\\.\\.\\/)?browser-polyfill.js\"/d' $(find . -not -path '*node_modules*' -name '*.js' -o -name '*.html')",
         "readme": "cat README.md | sed -r 's/\\[.+\\]\\((.+)\\)/\\1/' | sed -r '/\\[/{ N; s/\\[.+\\]\\((.+)\\)/\\n\\1/ }' | sed -r '/```/,/```/d' | vim -",
         "release": "VERSION=$(jq --raw-output '.version' manifest.json); hub release create $(for file in *$VERSION*.zip; do echo \" -a ${file} \"; done) -m $VERSION $VERSION",
         "start": "GTK_THEME=Greybird web-ext run --verbose --firefox firefox",
-        "start:nightly": "GTK_THEME=Greybird web-ext run --verbose --firefox firefox-trunk",
-        "test": "web-ext lint"
+        "start:nightly": "GTK_THEME=Greybird web-ext run --verbose --firefox firefox-trunk"
     },
     "title": "Open Tabs In Foreground",
-    "version": "1.0.5"
+    "version": "1.0.4"
 }
