@@ -29,7 +29,7 @@
                         "path": "*.zip"
                     }
                 ],
-                "draftRelease": true,
+                "draftRelease": false,
                 "failCommentCondition": false,
                 "releasedLabels": false,
                 "successCommentCondition": "<% return issue.user.type !== 'Bot'; %>"
