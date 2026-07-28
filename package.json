@@ -14,9 +14,7 @@
         "url": "https://github.com/sblask-webextensions/webextension-open-tabs-in-foreground"
     },
     "scripts": {
-        "chrome": "./bin/prepare-chrome.sh 0.0.0 && web-ext run --source-dir dist-chrome --target chromium",
-        "firefox": "./bin/prepare-firefox.sh 0.0.0 && web-ext run --source-dir dist-firefox --devtools",
-        "german": "./bin/prepare-firefox.sh 0.0.0 && web-ext run --source-dir dist-firefox --pref=general.useragent.locale=de-DE --pref=intl.locale.matchOS=false"
+        "chrome": "./bin/prepare-chrome.sh 0.0.0 && web-ext run --source-dir dist-chrome --target chromium"
     },
     "title": "Open Tabs In Foreground",
     "version": "x.x.x"
