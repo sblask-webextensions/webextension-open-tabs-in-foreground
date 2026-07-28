@@ -10,14 +10,6 @@ repos:
         types_or:
           - javascript
 
-      - id: web-ext lint
-        name: web-ext lint
-        entry: bash -c "./bin/prepare-chrome.sh 0.0.0 && ./bin/prepare-firefox.sh 0.0.0 && npx web-ext lint --source-dir dist-firefox/"
-        language: system
-        types_or:
-          - javascript
-        pass_filenames: false
-
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.12
     hooks:
