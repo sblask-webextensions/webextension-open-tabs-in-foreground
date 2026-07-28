@@ -30,7 +30,7 @@ jobs:
       - uses: actions/setup-node@v7
       - run: |
           npm install
-          ./bin/prepare-chrome.sh ${{ github.ref_name }}
+          ./bin/prepare-chrome.sh "${TAG}"
       - run: echo "CHROME_EXTENSION_ID=$(cat CHROME_EXTENSION_ID)" >> "${GITHUB_ENV}"
       - uses: mnao305/chrome-extension-upload@v6.0.0
         with:
