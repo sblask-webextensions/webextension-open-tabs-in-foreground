@@ -60,8 +60,10 @@ jobs:
           fetch-depth: "0"
 
       - uses: actions/download-artifact@v8
+        with:
+          merge-multiple: true
 
       - run: |
-          gh release create "$TAG" chrome/*.zip
+          gh release create "$TAG" ./*.zip
         env:
           GH_TOKEN: ${{ github.token }}
