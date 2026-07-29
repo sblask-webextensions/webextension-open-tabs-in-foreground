@@ -17,5 +17,6 @@
         "chrome": "./bin/prepare-chrome.sh 0.0.0 && web-ext run --source-dir dist-chrome --target chromium"
     },
     "title": "Open Tabs In Foreground",
+    "type": "module",
     "version": "x.x.x"
 }
