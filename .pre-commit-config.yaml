@@ -10,6 +10,12 @@ repos:
         types_or:
           - javascript
 
+      - id: prepare-chrome check
+        name: Check prepare-chrome script works
+        entry: bash -c "./bin/prepare-chrome.sh 0.0.0"
+        language: system
+        pass_filenames: false
+
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.12
     hooks:
