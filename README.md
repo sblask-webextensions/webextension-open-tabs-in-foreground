@@ -1,4 +1,5 @@
 [![pre-commit Status](https://github.com/sblask/webextension-open-tabs-in-foreground/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/sblask/webextension-open-tabs-in-foreground/actions/workflows/pre-commit.yml)
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/bmnanfhdjbcilhippcdfbhfpfoipgjgm?color=db4437)](https://chromewebstore.google.com/detail/open-tabs-in-foreground/bmnanfhdjbcilhippcdfbhfpfoipgjgm)
 
 Open Tabs In Foreground
 =======================
